@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Todos } from './../model/todos.model';
 import NewTodos from './NewTodos';
 import TodoList from './TodoList';
+import Counter from './Counter';
 
 
 
@@ -27,6 +28,7 @@ const TodoListContainer :React.FC = () => {
 		<div className="App">
 		  <NewTodos add={handleAdd} />
 		  <TodoList items={todoList} delete={handleDelete}/>
+		  <Counter title='kiarash'/>
 		</div>
 	)
 }
